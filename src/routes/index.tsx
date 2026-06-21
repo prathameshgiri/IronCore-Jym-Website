@@ -20,10 +20,29 @@ const RegisterPage = lazy(() => import('@/pages/auth/RegisterPage'))
 // Loading fallback for lazy-loaded pages
 function PageFallback() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="flex flex-col items-center gap-4">
-        <div className="w-12 h-12 rounded-full border-2 border-transparent border-t-neon-orange border-r-neon-red animate-spin" />
-        <p className="text-sm text-muted-foreground">Loading...</p>
+    <div className="min-h-screen pt-24 pb-20 px-5 lg:px-8 max-w-7xl mx-auto w-full">
+      {/* Hero Skeleton */}
+      <div className="flex flex-col items-center justify-center text-center mb-16 pt-12">
+        <div className="h-6 w-32 bg-slate-200 rounded-full animate-pulse mb-6" />
+        <div className="h-14 md:h-20 w-3/4 max-w-2xl bg-slate-200 rounded-2xl animate-pulse mb-6" />
+        <div className="h-4 w-2/3 max-w-lg bg-slate-200 rounded-full animate-pulse mb-2" />
+        <div className="h-4 w-1/2 max-w-md bg-slate-200 rounded-full animate-pulse" />
+      </div>
+
+      {/* Grid Skeleton */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[1, 2, 3, 4, 5, 6].map((i) => (
+          <div key={i} className="bg-white p-6 rounded-3xl border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+            <div className="w-full h-52 bg-slate-200 rounded-2xl animate-pulse mb-6" />
+            <div className="h-6 w-3/4 bg-slate-200 rounded-lg animate-pulse mb-4" />
+            <div className="h-4 w-full bg-slate-200 rounded-full animate-pulse mb-2" />
+            <div className="h-4 w-5/6 bg-slate-200 rounded-full animate-pulse mb-6" />
+            <div className="flex justify-between items-center pt-5 border-t border-slate-100">
+              <div className="h-10 w-28 bg-slate-200 rounded-full animate-pulse" />
+              <div className="h-10 w-10 bg-slate-200 rounded-full animate-pulse" />
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   )
