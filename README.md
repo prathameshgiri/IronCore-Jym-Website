@@ -131,7 +131,7 @@ Ensure you have **Node.js** (v18 or higher) installed on your machine. You can v
     Passionate Full Stack Developer creating premium web experiences.
   </p>
   <p>
-    <a href="https://build.prathameshgiri.in/" target="_blank">
+    <a href="https://prathameshgiri.in/" target="_blank">
       <img src="https://img.shields.io/badge/Portfolio-Visit_Website-ea580c?style=for-the-badge" alt="Portfolio" />
     </a>
   </p>
